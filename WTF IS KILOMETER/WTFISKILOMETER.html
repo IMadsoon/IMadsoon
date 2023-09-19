@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Kilometer1 {
+            text-align: center;
+            font-size: 50px;
+            cursor: pointer;
+        }
+        #USA {
+            display: block;
+            width: 800px; 
+            height: auto; 
+            margin: 0 auto; 
+        }
+        #USA2 {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+        body {
+            background-color: rgb(34, 0, 255);
+            margin: 0; /* Add this to remove default body margin */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="Kilometer1" onclick="replacePinto"><strong>WTF IS KILOMETER</strong></h1>
+        <img id="USA2" src="Images/WTF IS KILOMETER_Letters.jpg">
+        <img id="USA" src="Images/EUA BANDEIRA.jpg">
+    </div>
+    <script>
+        function replacePinto() {
+            const textElement = document.getElementById('Kilometer1');
+            const imageElement = document.getElementById('USA2');
+
+            textElement.style.display = 'none';
+            imageElement.style.display = 'inline';
+        }
+    </script>
+</body>
+</html>
